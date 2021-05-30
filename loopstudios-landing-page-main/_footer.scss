@@ -1,0 +1,103 @@
+footer{
+    margin-top: 10vw;
+    background-color: black;
+    padding: 2rem 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .social-links{
+            display: flex;
+            .social-link{
+                margin: 0rem 0.5rem;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    height: 0.1rem;
+                    transition: all 0.2s;
+                    top:130%;
+                    left: 60%;
+                    right:60%;
+                    background-color: var(--White);
+                }
+                &:hover{
+                    cursor: pointer;
+                    animation: bounce 0.2s 1 forwards;
+                    &::after{
+                        left: 0%;
+                        right:0%;
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--White);
+        margin-top: 1rem;
+        .other-links{
+            display: flex;
+            .other-link{
+                font-family: 'Josefin Sans', sans-serif;
+                margin-right: 1rem;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    height: 0.1rem;
+                    transition: all 0.2s;
+                    top:110%;
+                    left: 60%;
+                    right:60%;
+                    background-color: var(--White);
+                }
+                &:hover{
+                    cursor: pointer;
+                    animation: bounce 0.2s 1 forwards;
+                    &::after{
+                        left: 30%;
+                        right:30%;
+                    }
+                }
+            }
+        }
+        .right{
+            color: var(--DarkGray);
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .top{
+        flex-direction: column-reverse;
+        .social-links{
+            margin-bottom: 2rem;
+        }
+    }
+    .bottom{
+        flex-direction: column;
+        .other-links{
+            flex-direction: column;
+            text-align: center;
+            .other-link{
+                margin: 0.5rem 0rem;
+            }
+        }
+    }
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0%)
+    }
+    50%{
+        transform: translateY(-10%)
+    }
+    100%{
+        transform: translateY(0%)
+    }
+}

@@ -1,0 +1,44 @@
+@import 'reset';
+@import 'fonts';
+@import 'style';
+@import 'header';
+@import 'nav';
+@import 'about';
+@import 'creation';
+@import 'footer';
+@import 'preloader';
+@import 'circle';
+
+html,body{
+    overflow: visible;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+
+}
+.loadcontent{
+    animation: load 0.5s 1 forwards;
+}
+.loadcontent2{
+    animation: load2 0.5s 1 forwards;
+}
+@keyframes load {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes load2 {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

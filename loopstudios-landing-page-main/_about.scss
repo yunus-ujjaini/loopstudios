@@ -1,0 +1,96 @@
+.about
+{
+    // background-color: yellow;
+    margin: 5vw auto;
+    width: 80%;
+    position: relative;
+    height: 35vw;
+    .about-img{
+        position: absolute;
+        img{
+            height: 35vw;
+        }
+    }
+    .about-text{
+        background-color: var(--White);
+        // width: 30rem;
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        padding-top: 5vw;
+        padding-left: 5vw;
+        max-height: 35vw;
+        &-head{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 3vw;
+            text-transform: uppercase;
+            font-weight: 200;
+            line-height: normal;
+        }
+        &-sub{
+            margin-top: 1.5rem;
+            font-size: 1vw;
+            color: var(--DarkGray);
+            line-height: 200%;
+            
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .about
+    {
+        // background-color: yellow;
+        margin: 0vw;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 100%;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .about-img{
+            position: relative;
+            img{
+                height: auto;
+                width: 90vw;
+            }
+        }
+        .about-text{
+            margin-top: 5rem;
+            width: 85vw;
+            background-color: var(--White);
+            // width: 30rem;
+            position: relative;
+            left: 0%;
+            bottom: 0%;
+            padding-top: 0vw;
+            padding-left: 0vw;
+            max-height: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            
+            &-head{
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 10vw;
+                text-transform: uppercase;
+                font-weight: 200;
+                line-height: normal;
+                
+            }
+            &-sub{
+                width: 85%;
+                margin-top: 1.5rem;
+                font-size: 4.5vw;
+                color: var(--DarkGray);
+                line-height: 200%;
+                
+            }
+        }
+    }
+}
+

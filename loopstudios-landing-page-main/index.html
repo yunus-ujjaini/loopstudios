@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>  
+    <nav id="navbar">
+      <div class="brand">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="nav-main">
+          <div class="hamburger hamburger-close" id="hamburger" onclick="toggleMenu()" >
+          
+          </div>
+        
+        <div class="links" id="links">
+          <div class="link">About</div>
+          <div class="link">Careers</div>
+          <div class="link">Events</div>
+          <div class="link">Products</div>
+          <div class="link">Support</div>
+        </div>
+      </div>
+    </nav>
+      <h1 class="header-content">
+        Immersive<br/>experiences<br/>that<br id="headbreak"/> deliver
+      </h1>
+  </header>
+
+
+  <section class="about"  id="about">
+    <picture class="about-img">
+      <source media="(min-width: 800px)" srcset="images/desktop/image-interactive.jpg">
+      <img src="images/mobile/image-interactive.jpg"/>
+    </picture>
+    <h2 class="about-text">
+      <div class="about-text-head">
+        The leader in interactive VR
+      </div>
+      <div class="about-text-sub">
+        Founded in 2011, Loopstudios has been producing world-class virtual reality 
+      projects for some of the best companies around the globe. Our award-winning 
+      creations have transformed businesses through digital experiences that bind 
+      to their brand.
+      </div>
+    </h2>
+  </section>
+
+
+  <section class="creation">
+    <div class="creation-head">
+      <div class="creation-head-name">
+        OUR CREATIONS
+      </div>
+      <div class="creation-head-btn">
+        <button>SEE ALL</button>
+      </div>
+    </div>
+    <div class="creation-content" id="creation">
+      <div class="creation-content-image">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/desktop/image-deep-earth.jpg">
+          <img src="images/mobile/image-deep-earth.jpg" alt="deepEarth">
+        </picture>
+        <span>DEEP<br/>EARTH</span>
+      </div>
+      <div class="creation-content-image">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/desktop/image-night-arcade.jpg">
+          <img src="images/mobile/image-night-arcade.jpg" alt="nightArcade">
+        </picture>
+        <span>NIGHT<br/>ARCADE</span>
+      </div>
+      <div class="creation-content-image">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/desktop/image-soccer-team.jpg">
+          <img src="images/mobile/image-soccer-team.jpg" alt="soccerTeam">
+        </picture>
+        <span>SOCCER<br/>TEAM VR</span>
+      </div>
+      <div class="creation-content-image">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/desktop/image-grid.jpg">
+          <img src="images/mobile/image-grid.jpg" alt="grid">
+        </picture>
+        <span>THE<br/>GRID</span>
+      </div>
+      <div class="creation-content-image">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/desktop/image-from-above.jpg">
+          <img src="images/mobile/image-from-above.jpg" alt="above">
+        </picture>
+        <span>FROM UP<br/>ABOVE VR</span>
+      </div>
+      <div class="creation-content-image">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/desktop/image-pocket-borealis.jpg">
+          <img src="images/mobile/image-pocket-borealis.jpg" alt="pocket">
+        </picture>
+        <span>POCKET<br/>BOREALIS</span>
+      </div>
+      <div class="creation-content-image">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/desktop/image-curiosity.jpg">
+          <img src="images/mobile/image-curiosity.jpg" alt="curiosity">
+        </picture>
+        <span>THE<br/>CURIOSITY</span>
+      </div>
+      <div class="creation-content-image">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/desktop/image-fisheye.jpg">
+          <img src="images/mobile/image-fisheye.jpg" alt="fisheye">
+        </picture>
+        <span>MAKE IT<br/>FISHEYE</span>
+      </div>
+    </div>
+    <div class="creation-btn">
+      <button>SEE ALL</button>
+    </div>
+  </section>
+  <footer>
+    <div class="top">
+      <div class="left">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="right">
+        <div class="social-links">
+          <div class="social-link">
+            <img src="images/icon-facebook.svg" alt="facebook">
+          </div>
+          <div class="social-link">
+            <img src="images/icon-twitter.svg" alt="twitter">
+          </div>
+          <div class="social-link">
+            <img src="images/icon-pinterest.svg" alt="pinterest">
+          </div>
+          <div class="social-link">
+            <img src="images/icon-instagram.svg" alt="instagram">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="left">
+        <div class="other-links">
+          <div class="other-link">
+            About
+          </div>
+          <div class="other-link">
+            Careers
+          </div>
+          <div class="other-link">
+            Events
+          </div>
+          <div class="other-link">
+            Products
+          </div>
+          <div class="other-link">
+            Support
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <p>© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="preloader" id="preloader">
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    
+    
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    
+    <h1 class="preloader-item"></h1>
+    
+    <h1 class="preloader-item-main preloader-item">
+      
+      <div class="preloader-logo">
+        <div class="preloader-logo-top">
+          <div class="preloader-logo-sq" id="pre-logo"></div>
+          <div class="preloader-logo-sq"></div>
+        </div>
+        <div class="preloader-logo-bottom">
+          <div class="preloader-logo-sq"></div>
+          <div class="preloader-logo-sq"></div>
+        </div>
+        <img src="images/logo.svg" alt="logo">
+        
+      </div>
+    </h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+    <h1 class="preloader-item"></h1>
+  </div>
+ <div class="circle" id="circle"></div>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+header{
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    
+    background-image: linear-gradient(to bottom,rgba(35, 12, 15,0.1), rgba(35, 12, 15,0.1)),url(images/mobile/image-hero.jpg);
+    background-size: cover;
+    // background-repeat: no-repeat;
+    background-position: center;
+    // position: relative;
+}
+.header-content{
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--White);
+    border: 2px solid var(--White);
+    padding: 7vw 5vw;
+    font-size: 10vw;
+    font-weight: 100;
+    line-height: normal;
+    margin-top: 25vh;
+}
+
+@media only screen and (min-width: 800px) {
+    header{
+        background-image: linear-gradient(to bottom,rgba(35, 12, 15,0.1), rgba(35, 12, 15,0.1)),url(images/desktop/image-hero.jpg);
+        padding: 4rem 6rem;
+    }
+    .header-content{
+        width: 35rem;
+        text-transform: uppercase;
+        color: var(--White);
+        border: 2px solid var(--White);
+        padding: 2rem;
+        font-size: 4rem;
+        font-weight: 100;
+        line-height: normal;
+        margin-top: 25vh;
+    }
+    #headbreak{
+        display: none;
+    }
+}
